@@ -4,11 +4,22 @@
 
 　　随着Android开发的成熟, 模块越来越多, 为了开发稳定的程序, 引入的库也随之增加, 如何确保所有项目使用相同的编译版本he库版本呢?
 当然, Gradle的参数配置可以帮我们实现这些.
+* [1、Extra](#Extra)
+* [2、Bean](#Bean)
+* [3、AfterExtras](#AfterExtras)
+* [4、AfterInject](#AfterInject)
+* [5、ViewById](#ViewById)
+* [6、AfterViews](#AfterViews)
+* [7、RootContext](#RootContext)
+* [8、SystemService](#SystemService)
 
-主要
-(1) 常用库的展示与配置.
-(2) 统一管理项目和库的版本.
-(3) 设置项目的私有参数.
+####<a name="Extra"/>1、Extra
+
+
+主要:
+* (1) 常用库的展示与配置.
+* (2) 统一管理项目和库的版本.
+* (3) 设置项目的私有参数.
 
 1. 常用库
 
