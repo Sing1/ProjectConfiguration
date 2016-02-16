@@ -87,12 +87,16 @@ dependencies {
     compile "de.hdodenhof:circleimageview:${libs.circleimageview}" // 头像视图
 }
 ```
-项目版本:<br/>
-def cfg = rootProject.ext.configuration<br/>
-cfg.compileVersion<br/>
-库版本:<br/>
-def libs = rootProject.ext.libraries<br/>
-${libs.retrofit}<br/>
+项目版本:
+```Java
+def cfg = rootProject.ext.configuration
+cfg.compileVersion
+```
+库版本:
+```Java
+def libs = rootProject.ext.libraries
+${libs.retrofit}
+```Java
 ####2、参数管理
 buildConfigField管理私有参数, 配置在gradle.properties里面.
 ```Java
