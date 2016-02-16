@@ -4,15 +4,15 @@
 
 　　随着Android开发的成熟, 模块越来越多, 为了开发稳定的程序, 引入的库也随之增加, 如何确保所有项目使用相同的编译版本he库版本呢?
 当然, Gradle的参数配置可以帮我们实现这些.<br/>
-主要:
+####主要:
 * (1) 常用库的展示与配置.
 * (2) 统一管理项目和库的版本.
 * (3) 设置项目的私有参数.
 
 ####1、常用库
-编程三剑客, RxJava+Retrofit+Dagger.
-常用: ButterKnife依赖注解, Glide/Picasso图片处理.
-使用根项目(rootProject)的参数管理子项目的版本.
+编程三剑客, RxJava+Retrofit+Dagger<br/>
+常用: ButterKnife依赖注解, Glide/Picasso图片处理<br/>
+使用根项目(rootProject)的参数管理子项目的版本<br/>
 ```Java
 apply plugin: 'me.tatarka.retrolambda'      // Lambda表达式
 apply plugin: 'com.android.application'     // Android应用
