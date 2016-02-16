@@ -87,17 +87,14 @@ dependencies {
     compile "de.hdodenhof:circleimageview:${libs.circleimageview}" // 头像视图
 }
 ```
-项目版本:
-def cfg = rootProject.ext.configuration
-cfg.compileVersion
-库版本:
-def libs = rootProject.ext.libraries
-${libs.retrofit}
-
-2. 参数管理
-
+项目版本:<br/>
+def cfg = rootProject.ext.configuration<br/>
+cfg.compileVersion<br/>
+库版本:<br/>
+def libs = rootProject.ext.libraries<br/>
+${libs.retrofit}<br/>
+####2、参数管理
 buildConfigField管理私有参数, 配置在gradle.properties里面.
-
 ```Java
 android {
     defaultConfig {
@@ -111,16 +108,14 @@ android {
 marvel_public_key   = 74129ef99c9fd5f7692608f17abb88f9
 marvel_private_key  = 281eb4f077e191f7863a11620fa1865f2940ebeb
 ```
-未指定路径, 默认是配置在gradle.properties中.
-两个地方可以配置参数, 一个是项目的build.gradle, 一个是gradle.properties.
-
-项目中使用BuildConfig.xxx引入参数.
-
-        MarvelSigningIterceptor signingIterceptor = new MarvelSigningIterceptor(
-                BuildConfig.MARVEL_PUBLIC_KEY, BuildConfig.MARVEL_PRIVATE_KEY);
-                
-3. 版本管理
-
+未指定路径, 默认是配置在gradle.properties中<br/>
+两个地方可以配置参数, 一个是项目的build.gradle, 一个是gradle.properties<br/>
+项目中使用BuildConfig.xxx引入参数<br/>
+```Java
+MarvelSigningIterceptor signingIterceptor = new MarvelSigningIterceptor(
+BuildConfig.MARVEL_PUBLIC_KEY, BuildConfig.MARVEL_PRIVATE_KEY);
+```
+####3. 版本管理
 版本管理配置在项目的build.gradle中, 包含两个部分, 一个是项目的版本, 一个是库的版本. 把常用参数设置成为变量. 子项目使用rootProject.ext.xxx的形式引入.
 ```Java
 ext {
